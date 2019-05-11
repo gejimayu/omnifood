@@ -3,6 +3,7 @@
 /* -------------------- */
 :root{
   --main-color: #ea9800;
+  --main-color-darker: #c88200;
 }
 
 * {
@@ -50,6 +51,12 @@ ion-icon.icon-big {
   color: var(--main-color);
 }
 
+ion-icon.icon-smaller {
+  font-size: 1.1rem;
+  margin-right: 15px;
+  color:  var(--main-color);
+}
+
 /* ----- HEADINGS ------*/
 h1,
 h2,
@@ -91,7 +98,7 @@ a {
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #d98d00;
+  background-color: var(--main-color-darker);
 }
 
 .btn--ghost:link,
@@ -300,16 +307,40 @@ header {
 .section--cities__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  grid-gap: 40px;
+  margin-top: 60px;
 }
 
 .content__city {
   width: 100%;
 }
 
-.content__city .city__image {
+.city__image {
   width: 100%;
   height: auto;
 }
 
+.city__title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.city__feature {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.city__feature a:link,
+.city__feature a:visited {
+  color: var(--main-color);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--main-color);
+  transition: border-bottom 0.3s;
+}
+
+.city__feature a:hover,
+.city__feature a:active {
+  color: var(--main-color-darker);
+  border-bottom: 1px solid transparent;
+}
