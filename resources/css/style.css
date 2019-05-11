@@ -26,6 +26,11 @@ html {
     margin: 0 auto;
 }
 
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
 .custom-heading {
   text-align: center;
 }
@@ -157,23 +162,21 @@ header {
 /* FEATURE SECTION */
 /* ------------------- */
 
-.feature-section {
+.section--feature {
   color: #555;
   background-color: #f4f4f4;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
-.feature-section__header {
+.section--feature__header {
   max-width: 70%; 
   margin-bottom: 70px;
 }
 
-.feature-section__header p {
+.section--feature__header p {
   line-height: 150%;
 }
 
-.feature-section__features {
+.section--feature__features {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
   justify-content: space-between;
@@ -224,18 +227,16 @@ header {
 /* HOW IT WORKS SECTION */
 /* ------------------- */
 
-.how-it-works-section {
+.section--how-it-works {
   color: #555;
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #f4f4f4;
 }
 
-.how-it-works-section__header {
+.section--how-it-works__header {
   margin-bottom: 60px;
 }
 
-.how-it-works-section__content {
+.section--how-it-works__content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -287,3 +288,28 @@ header {
   width: auto;
   margin-right: 15px;
 }
+
+/* ------------------- */
+/* CITIES SECTION */
+/* ------------------- */
+
+.section--cities {
+  color: #555;
+}
+
+.section--cities__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.content__city {
+  width: 100%;
+}
+
+.content__city .city__image {
+  width: 100%;
+  height: auto;
+}
+
+
