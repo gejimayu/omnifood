@@ -493,3 +493,50 @@ textarea {
   border: 1px solid #ccc;
   font-weight: 300;
 }
+
+/* ------------------- */
+/* FOOTER SECTION */
+/* ------------------- */
+
+footer {
+  background-color: rgb(51, 51, 51);
+  color: #8F8F8F;
+  font-size: 0.8rem;
+}
+
+footer .nav a {
+  color: #8F8F8F;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer .nav a:hover, a:active {
+  color: #E7E7E7;
+}
+
+footer .social-media a {
+  color:  #8F8F8F;
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+
+footer .social-media a:hover, a:active {
+  color: #E7E7E7;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .credit {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
