@@ -36,7 +36,7 @@ html {
   text-align: center;
 }
 
-.custom-heading:after {
+.custom-heading::after {
   display: block;
   content: " ";
   width: 95px;
@@ -274,7 +274,7 @@ header {
   list-style: none;
 }
 
-.content__right li:before {
+.content__right li::before {
   counter-increment: howitworks;
   content: counter(howitworks);
   display: block;
@@ -343,4 +343,55 @@ header {
 .city__feature a:active {
   color: var(--main-color-darker);
   border-bottom: 1px solid transparent;
+}
+
+/* ------------------- */
+/* REVIEW SECTION */
+/* ------------------- */
+
+.section--review {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.section--review__content {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 110%;
+  grid-gap: 40px;
+  /* text */
+  line-height: 150%;
+  font-style: italic;
+}
+
+.section--review__content blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* for pesudoelement */
+  position: relative;
+}
+
+.section--review__content blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  font-size: 500%;
+}
+
+.section--review__content cite {
+  display: block;
+  font-size: 90%;
+}
+
+.section--review__content cite img {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
 }
