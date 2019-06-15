@@ -4,6 +4,8 @@
 :root{
   --main-color: #ea9800;
   --main-color-darker: #c88200;
+  --bg-color: #f4f4f4;
+  --text-subtle-grey: #555;
 }
 
 * {
@@ -84,6 +86,7 @@ a {
 
 /* ------ BUTTONS ------ */
 .btn {
+  display: inline-block;
   padding: 10px 30px;
   border-radius: 50px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -170,8 +173,8 @@ header {
 /* ------------------- */
 
 .section--feature {
-  color: #555;
-  background-color: #f4f4f4;
+  color: var(--text-subtle-grey);
+  background-color: var(--bg-color);
 }
 
 .section--feature__header {
@@ -235,8 +238,8 @@ header {
 /* ------------------- */
 
 .section--how-it-works {
-  color: #555;
-  background-color: #f4f4f4;
+  color: var(--text-subtle-grey);
+  background-color: var(--bg-color);
 }
 
 .section--how-it-works__header {
@@ -301,7 +304,7 @@ header {
 /* ------------------- */
 
 .section--cities {
-  color: #555;
+  color: var(--text-subtle-grey);
 }
 
 .section--cities__content {
@@ -394,4 +397,68 @@ header {
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+/* ------------------- */
+/* PLANS SECTION */
+/* ------------------- */
+
+.section--plans {
+  background-color: var(--bg-color);
+  color: var(--text-subtle-grey);
+}
+
+.section--plans__content {
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 5%;
+}
+
+.plan {
+  background-color: #fff;
+}
+
+.plan > div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan > div:nth-child(2) {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.plan__price {
+  margin: 20px 0 10px 0;
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--main-color-darker);
+}
+
+.plan__price span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.plan__notes {
+  font-size: 0.8rem;
+}
+
+.plan__offers {
+  list-style: none;
+}
+
+.plan__offers ion-icon {
+  font-size: 0.6rem;
+  color: var(--main-color-darker);
+  margin-right: 15px;
+}
+
+.plan__offers li {
+  padding: 5px 0;
+}
+
+.plan > div:last-child {
+  text-align: center;
 }
