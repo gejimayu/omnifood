@@ -279,5 +279,33 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--contact">
+      <div class="section--contact__header row">
+        <h2 class="custom-heading">WE'RE HAPPY TO HEAR FROM YOU</h2>
+      </div>
+      <div class="section--contact__content row">
+        <form class="section--contact__form" action="">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your email" required>
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="friends">Friends</option>
+            <option value="search-engine">Search engine</option>
+            <option value="ads">Advertisement</option>
+            <option value="others">Others</option>
+          </select>
+          <label for="newsletter">Newsletter?</label>
+          <div>
+            <input type="checkbox" name="newsletter" id="newsletter" checked>&nbsp Yes, please  
+          </div>
+          <label for="message">Drop us a line</label>
+          <textarea name="message" id="message" cols="30" rows="4" placeholder="Your message"></textarea>
+          <input class="btn btn--full" type="submit" value="Send it!">
+        </form>
+      </div>
+    </section>
   </body>
 </html>

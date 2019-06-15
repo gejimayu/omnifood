@@ -92,8 +92,7 @@ a {
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn--full:link,
-.btn--full:visited {
+.btn--full {
   background-color: var(--main-color);
   color: #fff;
   border: 1px solid var(--main-color);
@@ -104,8 +103,7 @@ a {
   background-color: var(--main-color-darker);
 }
 
-.btn--ghost:link,
-.btn--ghost:visited {
+.btn--ghost {
   background-color: transparent;
   color: var(--main-color);
   border: 1px solid var(--main-color);
@@ -461,4 +459,37 @@ header {
 
 .plan > div:last-child {
   text-align: center;
+}
+
+/* ------------------- */
+/* CONTACT SECTION */
+/* ------------------- */
+
+.section--contact {
+  color: var(--text-subtle-grey);
+}
+
+.section--contact__content {
+  padding: 0 16%;
+}
+
+.section--contact__form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 20px;
+}
+
+.section--contact__form input[type=submit] {
+  grid-column: 2 / 3;
+  width: 30%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-weight: 300;
 }
