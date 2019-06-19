@@ -34,3 +34,25 @@ animateOnViewport('.section--feature__features', 'animation-fade-in');
 animateOnViewport('.content__left img', 'animation-fade-in-up');
 animateOnViewport('.section--cities__content', 'animation-fade-in');
 animateOnViewport('.section--plans__content .plan:first-child', 'animation-pulse');
+
+// SMOOTH SCROLLING
+function smoothScroll(fromClassName, toIdName) {
+	const elements = document.querySelectorAll(fromClassName);
+	console.log(elements)
+	elements.forEach(function(element) {
+		element.addEventListener('click', function(e) {
+			e.preventDefault();
+			window.scroll({
+			  top: document.querySelector(toIdName).offsetTop,
+			  left: 0,
+			  behavior: 'smooth',
+			})
+		});
+	});
+}
+
+smoothScroll('.js--scroll-to-section-feature', '#section--feature');
+smoothScroll('.js--scroll-to-section-how-it-works', '#section--how-it-works');
+smoothScroll('.js--scroll-to-section-cities', '#section--cities');
+smoothScroll('.js--scroll-to-section-contact', '#section--contact');
+smoothScroll('.js--scroll-to-section-plans', '#section--plans');
