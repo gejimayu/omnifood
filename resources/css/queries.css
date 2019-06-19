@@ -52,6 +52,7 @@
 
 	/* PLANS SECTION */
 	.section--plans__content {
+		-ms-grid-columns: (32%)[3];
 		grid-template-columns: repeat(3, 32%);
 	  grid-gap: 2%;
 	}
@@ -120,6 +121,7 @@
 	}
 
 	.section--feature__features {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
 
@@ -157,6 +159,7 @@
 
 	/* CITIES SECTION */
 	.section--cities__content {
+	  -ms-grid-columns: 1fr;
 	  grid-template-columns: 1fr;
 	  margin-top: 30px;
 	}
@@ -164,6 +167,7 @@
 	/* REVIEW SECTION */
 	.section--review__content {
 	  margin-top: 55px;
+	  -ms-grid-columns: 1fr;
 	  grid-template-columns: 1fr;
 	  grid-auto-rows: auto;
 	  grid-gap: 65px;
@@ -175,17 +179,21 @@
 
 	/* PLANS SECTION */
 	.section--plans__content {
+	  -ms-grid-columns: 1fr;
 	  grid-template-columns: 1fr;
 	  padding-bottom: 60px;
 	}
 
 	/* CONTACT SECTION */
 	.section--contact__form {
+	  -ms-grid-columns: 1fr;
 	  grid-template-columns: 1fr;
 	  grid-row-gap: 15px;
 	}
 
 	.section--contact__form input[type=submit] {
+	  -ms-grid-column: 1;
+	  -ms-grid-column-span: 1;
 	  grid-column: 1 / 2;
 	  width: 30%
 	}

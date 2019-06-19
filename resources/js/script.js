@@ -38,7 +38,6 @@ animateOnViewport('.section--plans__content .plan:first-child', 'animation-pulse
 // SMOOTH SCROLLING
 function smoothScroll(fromClassName, toIdName) {
 	const elements = document.querySelectorAll(fromClassName);
-	console.log(elements)
 	elements.forEach(function(element) {
 		element.addEventListener('click', function(e) {
 			e.preventDefault();
