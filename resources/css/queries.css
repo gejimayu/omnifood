@@ -111,21 +111,38 @@
 	.header-nav > .row {
 		justify-content: flex-start; /* push nav items to left */
 		align-items: initial; /* remove align items center to push down nav links */
+		/* overflow: hidden;
+		height: 60px;
+		transition: height 0.5s ease-out; */
 	}
 
-	.header-nav ion-icon[name='menu'] {
+	.header-nav ion-icon {
 		font-size: 2.5rem;
 		margin-left: auto; /* push menu icon to right */
+		cursor: pointer;
 	}
 
 	.header-nav nav {
 		margin-top: 20px;
 		margin-left: 30px;
+		opacity: 0; /* hide intiially */
+		overflow: hidden;
+		height: 40px;
+		transition: height 0.5s ease-out, opacity 0.7s, margin-top 0.6s;
 	}
 
 	.header-nav nav a {
-		display: block; /* make nav links align in a column */
-		margin-bottom: 4px;
+		display: block; /* make nav links align in a column instead of row */
+		margin-top: 4px;
+	}
+
+	.header-nav nav a:hover,
+	.header-nav nav a:active {
+	  border-bottom: 4px solid transparent;
+	}
+
+	.sticky-nav ion-icon { /* secondary nav for mobile */
+	  color: var(--text-subtle-grey);
 	}
 
 	/* FEATURE SECTION */

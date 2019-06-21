@@ -55,3 +55,22 @@ smoothScroll('.js--scroll-to-section-how-it-works', '#section--how-it-works');
 smoothScroll('.js--scroll-to-section-cities', '#section--cities');
 smoothScroll('.js--scroll-to-section-contact', '#section--contact');
 smoothScroll('.js--scroll-to-section-plans', '#section--plans');
+
+// RESPONSIVE NAVBAR
+const hamburgerIcon = document.querySelector('.header-nav ion-icon');
+const navs = document.querySelector('.header-nav nav');
+let isHamburgerIconOpen = true;
+hamburgerIcon.addEventListener('click', function(element) {
+	if (isHamburgerIconOpen) {
+		hamburgerIcon.setAttribute('name', 'close');
+		navs.style.opacity = 1;
+		navs.style.height = '170px';
+		navs.style.marginTop = '20px';
+	} else {
+		hamburgerIcon.setAttribute('name', 'menu');
+		navs.style.opacity = 0;
+		navs.style.height = '40px';
+		navs.style.marginTop = '0px';
+	}	
+	isHamburgerIconOpen = !isHamburgerIconOpen;
+})

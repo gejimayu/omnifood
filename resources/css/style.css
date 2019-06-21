@@ -181,7 +181,8 @@ header {
   box-shadow: 0px 2px 2px #E1E1E1;
 }
 .sticky-nav .row {
-  padding-top: 5spx;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .sticky-nav .logo { display: none; } /* deactivate primary logo */
 .sticky-nav .logo-black {
@@ -194,9 +195,6 @@ header {
   color: var(--text-subtle-grey);
   /* push bottom orange line to the edge */
   padding-bottom: 14px;
-}
-.sticky-nav ion-icon[name='menu'] {
-  color: var(--text-subtle-grey);
 }
 
 /* ------------------- */
