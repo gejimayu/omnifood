@@ -117,18 +117,29 @@
 	}
 
 	.header-nav ion-icon {
+		display: inline-block;
+		margin-top: 20px;
 		font-size: 2.5rem;
 		margin-left: auto; /* push menu icon to right */
 		cursor: pointer;
 	}
 
 	.header-nav nav {
-		margin-top: 20px;
 		margin-left: 30px;
-		opacity: 0; /* hide intiially */
 		overflow: hidden;
-		height: 40px;
 		transition: height 0.5s ease-out, opacity 0.7s, margin-top 0.6s;
+	}
+
+	.header-nav nav.nav-opened {
+		opacity: 1;
+		height: 170px;
+		margin-top: 20px;
+	}
+
+	.header-nav nav.nav-closed {
+		opacity: 0;
+		height: 40px;
+		margin-top: 0;
 	}
 
 	.header-nav nav a {
@@ -143,6 +154,7 @@
 
 	.sticky-nav ion-icon { /* secondary nav for mobile */
 	  color: var(--text-subtle-grey);
+	  margin-top: 5px;
 	}
 
 	/* FEATURE SECTION */

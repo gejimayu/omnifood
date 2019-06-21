@@ -63,14 +63,12 @@ let isHamburgerIconOpen = true;
 hamburgerIcon.addEventListener('click', function(element) {
 	if (isHamburgerIconOpen) {
 		hamburgerIcon.setAttribute('name', 'close');
-		navs.style.opacity = 1;
-		navs.style.height = '170px';
-		navs.style.marginTop = '20px';
+		navs.classList.remove('nav-closed');
+		navs.classList.add('nav-opened');
 	} else {
 		hamburgerIcon.setAttribute('name', 'menu');
-		navs.style.opacity = 0;
-		navs.style.height = '40px';
-		navs.style.marginTop = '0px';
+		navs.classList.remove('nav-opened');
+		navs.classList.add('nav-closed');
 	}	
 	isHamburgerIconOpen = !isHamburgerIconOpen;
 })

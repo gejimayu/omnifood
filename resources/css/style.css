@@ -139,6 +139,7 @@ header {
   width: 100px;
 }
 .header-nav .logo-black { display: none; }
+.header-nav ion-icon { display: none; }
 
 .header-nav nav a:link,
 .header-nav nav a:visited {
